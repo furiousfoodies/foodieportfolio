@@ -1,4 +1,4 @@
-# foodieportfolio
+# Restaurant Passport
 Pitch: As a foodie, I want to be able to always have ideas of where I can eat when the opportunity arises (date night, a rare free night, girls night, bachelor party, etc.). I’m tired of defaulting to McDonalds because of decision fatigue every week!  I’m a goal setter, so I want to see visual progress of restaurants I’ve tried. I also want to brag to my friends about all the cool places I’ve been. 
 
 MVP Features Breakdown:
