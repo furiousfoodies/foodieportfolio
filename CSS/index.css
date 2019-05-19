@@ -31,6 +31,7 @@
     position: fixed;
     height: 65px;
     background-color: #44c7a0;
+    z-index: 1;
   }
   .top-bar .container {
     width: 100%;
@@ -38,7 +39,7 @@
     justify-content: none;
     align-items: none;
     flex-direction: row;
-    color: #fff;
+    color: white;
     letter-spacing: 1px;
     padding: 0 10px;
   }
@@ -99,7 +100,7 @@
     border-bottom: 1px solid lightgrey;
     width: 100%;
     height: 120px;
-    margin-top: 44px;
+    margin-top: 65px;
     padding-bottom: 15px;
   }
   @media (min-width: 1280px) {
@@ -137,12 +138,12 @@
     align-items: center;
     flex-direction: row;
     width: 100%;
-    height: 60px;
+    height: 65px;
     background-color: rgb(85, 190, 155);
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     .tabs {
-      width: 1280px;
+      width: 1000px;
     }
   }
   .tabs .topics {
@@ -239,9 +240,9 @@
     overflow: hidden;
     margin-top: 16px;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     .carousel {
-      width: 1200px;
+      width: 1000px;
     }
   }
   .carousel .left-button,
@@ -289,13 +290,13 @@
     margin-top: 95px;
   }
   .article {
-    margin: 20px 10%;
+    margin: 20px 20%;
     padding: 0 20px 25px;
     border: 1px solid lightgrey;
     border-radius: 10px;
     background-color: white;
     position: relative;
-    height: 50px;
+    height: 80px;
     overflow: hidden;
     box-shadow: 2px 2px 2px lightgrey;
   }
@@ -343,11 +344,9 @@
     margin: 0;
     font-size: 48px;
   }
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto';
-    background-color: #fffef7;
+  img{
+    width: 200px;
+    height: 220px;
+    border-radius: 8px;
   }
   
