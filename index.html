@@ -2,45 +2,40 @@
 <html>
 
 <head>
-    <title>Restaurant Passport</title>
-    <link rel="icon" href="./images.png">
-    <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
-    <script src="./components/Cities/Cities.js" async></script>
-    <script src="./components/Passports/Passports.js" async></script>
-    <script src="./components/Restaurants/Restaurants.js" async></script>
-    <script src="./components/Users/Users.js" async></script>
+  <title>Restaurant Passport</title>
+  <link rel="icon" href="./images.png">
+  <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+  <script src="./components/Navigation/Navigation.js" async></script>
+  <script src="./components/Passports/Passports.js" async></script>
+  <script src="./components/Cities/Cities.js" async></script>
+  <script src="./components/Restaurants/Restaurants.js" async></script>
+  <script src="./components/Users/Users.js" async></script>
 </head>
 
 <body>
-    <div class="top-bar">
+  <div class="top-bar">
         <div class="container">
-            <div class="container-left">
-                <span>SEARCH</span>
-            </div>
-            <div class="container-center">
-                <span>Mexican</span><span>Asian</span><span>Caribbean</span><span>Fast Food</span><span>Coffee</span>
-            </div>
             <div class="container-right">
                 <span>LOG IN</span>
             </div>
         </div>
     </div>
     <div class="header">
-
+    <!-- white header -->
+    <div class="header">
         <h1>Restaurant Passport</h1>
-
     </div>
     <!-- courisor  -->
     <div class="carousel">
-        <div class="left-button">
-            <</div> <img src="./assets/mexican.jpg" />
-            <img src="./assets/Asian.jpg" />
-            <img src="./assets/caribbean.jpg" />
-            <img src="./assets/Fast.jpg" />
-            <img src="./assets/coffe.jpg" />
-            <div class="right-button">></div> 
-     </div> -->
-    <div class="tabs">
+      <div class="left-button">
+        <</div> <img src="./assets/mexican.jpg" />
+        <img src="./assets/Asian.jpg" />
+        <img src="./assets/caribbean.jpg" />
+        <img src="./assets/Fast.jpg" />
+        <img src="./assets/coffe.jpg" />
+        <div class="right-button">></div>
+      </div>
+      <div class="tabs">
         <div class="topics">
           <div data-tab="all" class="tab active-tab">Restaurants</div>
           <div data-tab="javascript" class="tab">Mexican</div>
@@ -52,39 +47,47 @@
       </div>
       <div class="articles">
         <div class="article">
-          <h2>1</h2>
-          <p class="date">Nov 5th, 2017</p>
-  
-          <p>details here</p>
-          <span class='moreButton'></span>
+          <h2>Mexican</h2>
+          <img src="./assets/mexican.jpg" alt="" class="mexican">
+          <br>
+          <p class="more">Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+            super friendly and helpful. I was about 3 minutes too early for happy hour, and when he…” read more</p>
+          <span class="moreButton"></span>
+
         </div>
         <div class="article">
-          <h2>2</h2>
-          <p class="date">Nov 7th, 2017</p>
-          <p>details here 2</p>
-          <span class='moreButton'></span>
+          <h2>Asian</h2>
+          <img src="./assets/Asian.jpg" alt="" class="Asian">
+          <br>
+          <p class="more">Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+            super friendly and helpful. I was about 3 minutes too early for happy hour, and when he…” read more</p>
+          <span class="moreButton"></span>
         </div>
         <div class="article">
-          <h2>3</h2>
-          <p class="date">Nov 7th, 2017</p>
-  
-          <p>details here 3</p>
-  
-          
-          <span class='moreButton'></span>
+          <h2>caribbean</h2>
+          <img src="./assets/caribbean.jpg" alt="" class="caribbean">
+            <br>
+            <p class="more">Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+                super friendly and helpful. I was about 3 minutes too early for happy hour, and when he…” read more</p>
+            <span class="moreButton"></span>
         </div>
         <div class="article">
-          <h2> 4</h2>
-          <p class="date">time</p>
-          <p>details here 4</p>
-          <span class='more'></span>
+            <h2>Fast Food</h2>
+            <img src="./assets/fastFood.jpg" alt="" class="fastFood">
+              <br>
+              <p class="more">Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+                  super friendly and helpful. I was about 3 minutes too early for happy hour, and when he…” read more</p>
+              <span class="moreButton"></span>
         </div>
         <div class="article">
-            <h2>5</h2>
-            <p class="dateButton">time</p>
-    
-            <p>details here 5.</p>
-            <span class='moreButton'></span>
+          <h2>coffee</h2>
+          <img src="./assets/coffe.jpg" alt="" class="coffee">
+            <br>
+            <p class="more">Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+                super friendly and helpful. I was about 3 minutes too early for happy hour, and when he…” read more</p>
+            <span class="moreButton"></span>
         </div>
+      </div>
     </div>
+  </div>
 </body>
