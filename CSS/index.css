@@ -20,7 +20,8 @@
     background-color: #f1f1f1;
     color: #333;
     font-family: 'PT Sans', sans-serif;
-    background-image: url("../assets/eat3.jpg")
+    background-image: url("../assets/chairs-menu-restaurant-6267.jpg");
+    background-size: contain;
   }
   .top-bar {
     width: 100%;
@@ -43,9 +44,9 @@
     letter-spacing: 1px;
     padding: 0 10px;
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     .top-bar .container {
-      width: 1280px;
+      width: 1000px;
     }
   }
   .top-bar .container .container-left {
@@ -103,9 +104,9 @@
     margin-top: 65px;
     padding-bottom: 15px;
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     .header {
-      width: 1280px;
+      width: 1000px;
     }
   }
   .header h1 {
@@ -122,17 +123,7 @@
     font-weight: bolder;
     letter-spacing: 1px;
   }
-  .header .date {
-    margin-left: 25px;
-    flex: 1;
-  }
-  .header .temp {
-    text-align: right;
-    margin-right: 25px;
-    flex: 1;
-  }
   .tabs {
-    border-bottom: 1px solid lightgrey;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,9 +179,9 @@
     margin-top: 16px;
     flex-wrap: wrap;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     .cards-container {
-      width: 1200px;
+      width: 90%;
     }
   }
   .cards-container .card {
@@ -296,7 +287,7 @@
     border-radius: 10px;
     background-color: white;
     position: relative;
-    height: 80px;
+    height: 400px;
     overflow: hidden;
     box-shadow: 2px 2px 2px lightgrey;
   }
@@ -327,7 +318,6 @@
   .article-open {
     height: 400px;
   }
-  /* It is important to note, you will not be writing any CSS in this file*/
   .header {
     width: 90%;
     height: 75px;
@@ -345,8 +335,8 @@
     font-size: 48px;
   }
   img{
-    width: 200px;
-    height: 220px;
+    width: 30%;
+    height: 50%;
     border-radius: 8px;
   }
   
