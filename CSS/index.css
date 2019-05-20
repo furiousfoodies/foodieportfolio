@@ -1,10 +1,7 @@
 .width-100 {
     width: 100%;
   }
-  .border-bottom-grey {
-    border-bottom: 1px solid lightgrey;
-  }
-  * {
+    * {
     box-sizing: border-box;
   }
   html,
@@ -17,18 +14,40 @@
     justify-content: none;
     align-items: center;
     flex-direction: column;
-    background-color: #f1f1f1;
+    background-color: #333333;
     color: #333;
     font-family: 'PT Sans', sans-serif;
-    background-image: url("../assets/eat3.jpg")
   }
+
+/* Background opacity */
+  .fullcontainer {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+  }
+  .fullcontainer::before {
+    background-image: url("../assets/background.jpg");
+    background-size: contain;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.2;
+  }
+
+  /* Top bar */
   .top-bar {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: none;
     flex-direction: row;
-    position: fixed;
+    position: absolute;
     height: 65px;
     background-color: #44c7a0;
     z-index: 1;
@@ -43,11 +62,7 @@
     letter-spacing: 1px;
     padding: 0 10px;
   }
-  @media (min-width: 1280px) {
-    .top-bar .container {
-      width: 1280px;
-    }
-  }
+  
   .top-bar .container .container-left {
     display: flex;
     justify-content: none;
@@ -61,24 +76,7 @@
     margin-right: 25%;
     font-weight: bold;
   }
-  .top-bar .container .container-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex: 3;
-    font-size: 14px;
-  }
-  .top-bar .container .container-center span {
-    cursor: pointer;
-    margin-right: 5%;
-  }
-  .top-bar .container .container-center span:last-child {
-    margin-right: 0;
-  }
-  .top-bar .container .container-center span:hover {
-    text-decoration: underline;
-  }
+  
   .top-bar .container .container-right {
     display: flex;
     justify-content: flex-end;
@@ -91,23 +89,22 @@
   .top-bar .container .container-right span {
     cursor: pointer;
   }
+
+  /* Header */
   .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid lightgrey;
     width: 100%;
     height: 120px;
     margin-top: 65px;
     padding-bottom: 15px;
+    position: relative;
+    overflow: hidden;
   }
-  @media (min-width: 1280px) {
-    .header {
-      width: 1280px;
-    }
-  }
+  
   .header h1 {
     font-size: 60px;
     font-family: Didot, serif;
@@ -116,119 +113,9 @@
     text-align: center;
     color: #000;
   }
-  .header span {
-    align-self: flex-end;
-    font-size: 11px;
-    font-weight: bolder;
-    letter-spacing: 1px;
-  }
-  .header .date {
-    margin-left: 25px;
-    flex: 1;
-  }
-  .header .temp {
-    text-align: right;
-    margin-right: 25px;
-    flex: 1;
-  }
-  .tabs {
-    border-bottom: 1px solid lightgrey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 65px;
-    background-color: rgb(85, 190, 155);
-  }
-  @media (min-width: 1000px) {
-    .tabs {
-      width: 1000px;
-    }
-  }
-  .tabs .topics {
-    display: flex;
-    justify-content: none;
-    align-items: center;
-    flex-direction: row;
-  }
-  .tabs .topics .title {
-    font-size: 12px;
-    letter-spacing: 1px;
-    font-weight: bold;
-  }
-  .tabs .topics .tab {
-    display: flex;
-    justify-content: none;
-    align-items: center;
-    flex-direction: row;
-    color: #fff;
-    background-color: #333;
-    margin: 0 5px;
-    padding: 2px 10px;
-    font-size: 12px;
-    letter-spacing: 2px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  .tabs .topics .tab:hover {
-    text-decoration: underline;
-  }
-  .tabs .topics .active-tab {
-    background-color: #fff;
-    color: #333;
-    border: 2px solid #333;
-  }
-  .cards-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: none;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 16px;
-    flex-wrap: wrap;
-  }
-  @media (min-width: 1200px) {
-    .cards-container {
-      width: 1200px;
-    }
-  }
-  .cards-container .card {
-    border-bottom: 1px solid lightgrey;
-    display: flex;
-    justify-content: space-between;
-    align-items: none;
-    flex-direction: column;
-    background-color: #fff;
-    width: 380px;
-    margin-bottom: 16px;
-    padding: 24px;
-  }
-  .cards-container .card .headline {
-    font-size: 25px;
-    font-family: Didot, serif;
-  }
-  .cards-container .card .author {
-    display: flex;
-    justify-content: none;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 15px;
-  }
-  .cards-container .card .author .img-container {
-    padding-right: 10px;
-    border-right: 1px solid lightgrey;
-    height: 40px;
-  }
-  .cards-container .card .author .img-container img {
-    width: 40px;
-  }
-  .cards-container .card .author span {
-    padding-left: 10px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    font-weight: bold;
-  }
+  
+
+  /* Carousel */
   .carousel {
     width: 100%;
     display: flex;
@@ -240,11 +127,7 @@
     overflow: hidden;
     margin-top: 16px;
   }
-  @media (min-width: 1000px) {
-    .carousel {
-      width: 1000px;
-    }
-  }
+
   .carousel .left-button,
   .carousel .right-button {
     display: flex;
@@ -260,93 +143,178 @@
     height: 50px;
     cursor: pointer;
   }
+
   .carousel .left-button:hover,
   .carousel .right-button:hover {
     color: #333;
     background-color: #fff;
     border: 2px solid #333;
   }
+
   .carousel .left-button {
     top: 50%;
     left: 25px;
     transform: translate(0, -50%);
   }
+
   .carousel .right-button {
     top: 50%;
     right: 25px;
     transform: translate(0, -50%);
   }
+
   .carousel img {
-    width: 100%;
-    display: none;
-  }
-  .container-center{
-    font-family:'Righteous', cursive;
-    font-weight: bolder;
+    width: 20%;
+    display: flex;
+    /* Change this back to 100% and none */
   }
 
-  /* articles */
-  .articles {
-    margin-top: 95px;
-  }
-  .article {
-    margin: 20px 20%;
-    padding: 0 20px 25px;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    background-color: white;
-    position: relative;
-    height: 80px;
-    overflow: hidden;
-    box-shadow: 2px 2px 2px lightgrey;
-  }
-  .article h2 {
-    font-size: 28px;
-    padding: 0;
-    margin: 15px 0 0;
-  }
-  .article .date {
-    margin: 0;
-    font-size: 14px;
-  }
-  .article .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  .article .expandButton {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    font-size: 12px;
-    color: grey;
-    cursor: pointer;
-    transform: translate(-50%);
-    background-color: white;
-  }
-  .article-open {
-    height: 400px;
-  }
-  /* It is important to note, you will not be writing any CSS in this file*/
-  .header {
-    width: 90%;
-    height: 75px;
-    background-color: rgb(240, 247, 240);
-    color: white;
+  /* Tabs */
+  .tabs {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-  }
-  .header h1 {
-    margin: 0;
-    font-size: 48px;
-  }
-  img{
-    width: 200px;
-    height: 220px;
-    border-radius: 8px;
+    flex-direction: row;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(85, 190, 155);
   }
   
+  .tabs .food_type {
+    display: flex;
+    justify-content: none;
+    align-items: center;
+    flex-direction: row;
+  }
+  .tabs .food_type .title {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  .tabs .food_type .tab {
+    display: flex;
+    justify-content: none;
+    align-items: center;
+    flex-direction: row;
+    color: #fff;
+    background-color: #333;
+    margin: 0 5px;
+    padding: 2px 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .tabs .food_type .tab:hover {
+    text-decoration: underline;
+  }
+  .tabs .food_type .active-tab {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+  }
+  
+  /* Restaurants */
+  .restaurants {
+    margin-top: 95px;
+  }
+
+  .restaurants {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: none;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+
+  /* Restaurant */
+  .restaurant {
+    margin: 20px 1%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px rgb(85, 190, 155);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #fff;
+    width: 48%;
+    padding: 24px;
+  }
+
+  .restaurant h2 {
+    font-size: 28px;
+    padding: 0;
+    margin: 15px 0 0;
+    text-align:  center;
+  }
+   .restaurant img {
+    width: 55%;
+    height: 100%;
+    border-radius: 8px;
+    z-index: 0;
+  } 
+  .inner {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+  }
+  .restaurant .restauranttext {
+    width: 42%;
+    text-align: justify;
+  }
+  
+  /* Media queries */
+  @media (max-width: 500px) {
+    .container {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .container {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .restaurants {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .carousel {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .top-bar .container {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .tabs {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .header {
+      width: 1000px;
+    }
+  }

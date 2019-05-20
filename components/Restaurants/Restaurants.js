@@ -1,16 +1,37 @@
-class Restaurants extends Cities {
-    constructor(restaurant) {
-        super(restaurant);
-        this.name =  restaurant.name;
-        this.type = restaurant.type;
-        this.ethnicity = restaurant.ethnicity;
-        this.details = restaurant.details;
-        this.visited = restaurant.visited;
+class TabLink {
+    constructor(tabElement) {
+        this.tabElement = tabElement;
+        this.tabData = this.tabElement.dataset.tab;
+        if (this.tabData == "all") {
+            this.cards = document.querySelectorAll(".restaurant");
+        } else {
+            this.cards = document.querySelectorAll(`.restaurant[data-tab='${this.tabData}']`);
+        }
+        this.cards = Array.from(this.cards).map(card => new TabCard(card));
+        this.tabElement.addEventListener("click", () => this.selectTab());
     }
-    stamp () {
-        // Procedure to signify if a restaurant is visited or not
-    }
-    delete (){
-        // 
+
+    selectTab() {
+        const tabs = document.querySelectorAll(".tab");
+        tabs.forEach(item => {
+            item.classList.remove("active-tab");
+        })
+        const cards = document.querySelectorAll(".restaurant");
+        cards.forEach(item => {
+            item.style.display = "none";
+        })
+        this.tabElement.classList.add("active-tab");
+        this.cards.forEach(card => card.selectCard());
     }
 }
+
+class TabCard {
+    constructor(cardElement) {
+        this.cardElement = cardElement;
+    }
+    selectCard() {
+        this.cardElement.style.display = "flex";
+    }
+}
+
+let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));
