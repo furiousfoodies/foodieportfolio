@@ -256,7 +256,14 @@
     width: 55%;
     height: 100%;
     border-radius: 8px;
+    z-index: 0;
   } 
+  .inner {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+  }
   .restaurant .restauranttext {
     width: 42%;
     text-align: justify;
