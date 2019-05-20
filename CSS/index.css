@@ -258,15 +258,49 @@
     border-radius: 8px;
     z-index: 0;
   } 
-  .inner {
+
+  /* Stamp image overlay */
+  /* .inner {
     position: absolute;
     z-index: 1;
     bottom: 0;
     right: 0;
-  }
+  } */
+
   .restaurant .restauranttext {
-    width: 42%;
+    width: 95%;
     text-align: justify;
+    flex-direction: column;
+    padding-left: 5%;
+  }
+
+
+  .restaurant .buttons {
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .restaurant .buttons .removebtn,
+  .restaurant .buttons .stampbtn {
+    width: 50%;
+    height: 50px;
+    font-size: 1.4rem;
+    background: #333333;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    padding: 4%;
+    margin: 1%;
+  }
+
+  .restaurant .buttons .removebtn:hover,
+  .restaurant .buttons .stampbtn:hover {
+    background-color: #55BE9B;
+    color: white;
   }
   
   /* Media queries */
