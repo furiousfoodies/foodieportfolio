@@ -52,7 +52,8 @@ body {
   flex-direction: row;
   color: white;
   letter-spacing: 1px;
-  padding: 0 10px;
+  position: fixed;
+  
 }
 
 .top-bar .container .container-left {
@@ -62,6 +63,7 @@ body {
   flex-direction: row;
   flex: 1;
   font-size: 11px;
+  position: fixed;
 }
 
 .top-bar .container .container-left span {
@@ -192,8 +194,8 @@ body {
   justify-content: none;
   align-items: center;
   flex-direction: row;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   margin: 0 5px;
   height: 25px;
   padding: 2px 10px;
@@ -208,8 +210,8 @@ body {
 }
 
 .tabs .food_type .active-tab {
-  background-color: #fff;
-  color: #333;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   border: 2px solid #333;
 }
 
@@ -409,3 +411,6 @@ background-size: cover;
 .restaurant:hover > .bac{
   transform: perspective(600px) rotateY(0deg);
 }
+ /* social footer */
+
+ 
