@@ -35,3 +35,13 @@ class TabCard {
 }
 
 let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));
+
+$(".textbuttons").flip({
+    axis: 'x',
+    trigger: 'hover'
+  });
+
+  var flipimg = document.querySelectorAll(".textbuttons")
+flipimg.addEventListener("click",() =>{
+    flipimg.toggletextbuttons("flip");
+})

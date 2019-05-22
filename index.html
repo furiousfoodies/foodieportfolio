@@ -8,13 +8,16 @@
   <!-- <script src="./components/Navigation/Navigation.js" async></script>
   <script src="./components/Passports/Passports.js" async></script>
   <script src="./components/Cities/Cities.js" async></script> -->
+  <script src="jquery.flip.js"></script>
   <script src="./components/Restaurants/Restaurants.js" async></script>
+  <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+  <!-- <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script> -->
   <!-- <script src="./components/Users/Users.js" async></script> -->
 </head>
 
 <body>
   <div class="fullcontainer">
-      <div class="top-bar">
+    <!-- <div class="top-bar">
           <div class="container">
               <div class="container-left">
                   <span>LOG IN</span>
@@ -25,13 +28,16 @@
               <span>MEET THE CREW</span>
             </div>
           </div>
-      </div>
+      </div> -->
 
-      <div class="header">
-          <h1>Restaurant Passport</h1>
+    <div class="header">
+      <h1>Restaurant Passport</h1>
+      <div class="container-left">
+        <span>LOG IN</span>
       </div>
-      <!-- Cities  -->
-      <!-- <div class="carousel">
+    </div>
+    <!-- Cities  -->
+    <!-- <div class="carousel">
         <div class="left-button"><</div>
         <img src="./assets/carousel/asian.jpg" />
         <img src="./assets/carousel/caribbean.jpg"/>
@@ -44,183 +50,238 @@
         <div class="right-button">></div> 
       </div> -->
 
-      <div class="tabs">
-        <div class="food_type">
-          <span class="title">Restaurants</span>
-          <div data-tab="all" class="tab active-tab">All</div>
-          <div data-tab="american" class="tab">American</div>
-          <div data-tab="asian" class="tab">Asian</div>
-          <div data-tab="caribbean" class="tab">Caribbean</div>
-          <div data-tab="coffee" class="tab">Coffee</div>
-          <div data-tab="fastfood" class="tab">Fast Food</div>
-          <div data-tab="italian" class="tab">Italian</div>
-          <div data-tab="mediterranean" class="tab">Mediterranean</div>
-          <div data-tab="mexican" class="tab">Mexican</div>
-          <div data-tab="portuguese" class="tab">Portuguese</div>
-        </div>
+    <div class="tabs">
+      <div class="food_type">
+        <span class="title">Restaurants</span>
+        <div data-tab="all" class="tab active-tab">All</div>
+        <div data-tab="american" class="tab">American</div>
+        <div data-tab="asian" class="tab">Asian</div>
+        <div data-tab="caribbean" class="tab">Caribbean</div>
+        <div data-tab="coffee" class="tab">Coffee</div>
+        <div data-tab="fastfood" class="tab">Fast Food</div>
+        <div data-tab="italian" class="tab">Italian</div>
+        <div data-tab="mediterranean" class="tab">Mediterranean</div>
+        <div data-tab="mexican" class="tab">Mexican</div>
+        <div data-tab="portuguese" class="tab">Portuguese</div>
       </div>
-          
-      <div class="restaurants">
+    </div>
 
-          <section class="restaurant" data-tab="american">
-            <img src="./assets/restaurants/thegoat.jpg" alt="The Goat">
-            <div class="textbuttons">
+    <div class="restaurants">
+      <!-- american -->
+      <section class="restaurant" data-tab="american">
+          <img id="img1" src="./assets/restaurants/thegoat.jpg" alt="The Goat">
+          <div class="textbuttons">
             <div class="restauranttext">
-              <h2>The Goat</h2>
-              <br>
-              <p>The Goat is a lively social space dedicated to bringing people together. With a community-inspired
-                menu, crafted cocktails, a wide range of local bourbons & brews, live music performances, sand
-                volleyball leagues and community events, there’s always something new to discover.
+                <h2>The Goat</h2>
+                <br>
+                  <p>The Goat is a lively social space dedicated to bringing people together. With a community-inspired
+                    menu, crafted cocktails, a wide range of local bourbons & brews, live music performances, sand
+                    volleyball leagues and community events, there’s always something new to discover.
 
-                We invite you to stop in and (dis)connect with us.</p>
-            </div>
-            <div class="buttons">
-              <div class="removebtn">Delete?</div>
-              <div class="stampbtn">Visited?</div>
-            </div>
-            </div>
-            
-          </section>
-
-          <section class="restaurant" data-tab="asian">
-            <img src="./assets/restaurants/asian.jpg" alt="">
-            <div class="restauranttext">
-              <h2>Asian</h2>
-              <br>
-              <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
-                super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
-            </div>
-          </section>
-
-          <section class="restaurant" data-tab="caribbean">
-            <img src="./assets/restaurants/caribbean.jpg" alt="">
-            <div class="restauranttext">
-              <h2>Caribbean</h2>
-              <br>
-              <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
-                  super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
-            </div>
-          </section>
-
-          <section class="restaurant" data-tab="fastfood">
-            <img src="./assets/restaurants/fastfood.jpg" alt="">
-            <div class="restauranttext">
-              <h2>Fast Food</h2>
-              <br>
-              <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
-                    super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
-           </div>
-          </section>
-
-          <section class="restaurant" data-tab="coffee">
-            <img src="./assets/restaurants/coffee.jpg" alt="">
-            <div class="restauranttext">
-              <h2>Coffee</h2>
-              <br>
-              <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
-                  super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
-           </div>
-          </section>
-
-          <section class="restaurant" data-tab="mediterranean">
-            <img src="./assets/restaurants/mediterranean.jpg" alt="">
-            <div class="restauranttext">
-              <h2>Mediterranean</h2>
-              <br>
-              <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
-              super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
-            </div>
-          </section>
-
-          <section class="restaurant" data-tab="portuguese">
-            <img src="./assets/restaurants/portuguese.jpg" alt="">
-            <div class="restauranttext">
-              <h2>Portuguese</h2>
-              <br>
-              <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
-              super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
-            </div>
-          </section>
-
-          <section class="restaurant" data-tab="italian">
-            <img src="./assets/restaurants/italian.jpg" alt="">
-            <div class="restauranttext">
-              <h2>Italian</h2>
-              <br>
-              <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
-              super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
-            </div>
-           </section>
-
-          <section class="restaurant" data-tab="mexican">
-            <img src="./assets/restaurants/mexican.jpg" alt="">
-            <div class="restauranttext">
-              <h2>Mexican</h2>
-              <br>
-              <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
-                super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
-            </div>
-           </section>
-          
-          <section class="restaurant" data-tab="asian">
-            <img src="./assets/restaurants/asian.jpg" alt="">
-            <div class="restauranttext">
-              <h2>Asian</h2>
-              <br>
-              <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
-                super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
-            </div>
-           </section>
-          
-          <section class="restaurant" data-tab="caribbean">
-            <img src="./assets/restaurants/caribbean.jpg" alt="">
-            <div class="restauranttext">
-              <h2>Caribbean</h2>
-              <br>
-              <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
-                super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
-            </div>
-           </section>
-          
-          <section class="restaurant" data-tab="fastfood">
-            <img src="./assets/restaurants/fastfood.jpg" alt="">
-            <div class="restauranttext">
-              <h2>Fast Food</h2>
-              <br>
-              <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
-                super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
-            </div>
-           </section>
-          
-          <section class="restaurant" data-tab="coffee">
-            <img src="./assets/restaurants/coffee.jpg" alt="">
-            <div class="restauranttext">
-              <h2>Coffee</h2>
-              <br>
-              <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
-                super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
-            </div>
-           </section>
-          
-          <section class="restaurant" data-tab="mediterranean">
-            <img src="./assets/restaurants/mediterranean.jpg" alt="">
-            <div class="restauranttext">
-              <h2>Mediterranean</h2>
-              <br>
-              <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
-                super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
-            </div>
-           </section>
-          
-          <section class="restaurant" data-tab="italian">
-            <img src="./assets/restaurants/italian.jpg" alt="">
-            <div class="restauranttext">
-              <h2>Italian</h2>
-              <br>
-              <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
-                super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
-            </div>
-           </section>
+                    We invite you to stop in and (dis)connect with us.</p>
+              </div>
+              <div class="buttons">
+                <div class="removebtn">Delete?</div>
+                <div class="stampbtn">Visited?</div>
+              </div>
         </div>
+  </section>
+  <!-- asian -->
+  <section class="restaurant" data-tab="asian">
+    <img src="./assets/restaurants/asian.jpg" alt="">
+    <div class="restauranttext">
+      <h2>Asian</h2>
+      <br>
+      <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+        super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
+      <div class="buttons">
+        <div class="removebtn">Delete?</div>
+        <div class="stampbtn">Visited?</div>
+      </div>
+    </div>
+  </section>
+  <!-- caribbean -->
+  <section class="restaurant" data-tab="caribbean">
+    <img src="./assets/restaurants/caribbean.jpg" alt="">
+    <div class="restauranttext">
+      <h2>Caribbean</h2>
+      <br>
+      <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+        super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
+      <div class="buttons">
+        <div class="removebtn">Delete?</div>
+        <div class="stampbtn">Visited?</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="restaurant" data-tab="fastfood">
+    <img src="./assets/restaurants/fastfood.jpg" alt="">
+    <div class="restauranttext">
+      <h2>Fast Food</h2>
+      <br>
+      <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+        super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
+      <div class="buttons">
+        <div class="removebtn">Delete?</div>
+        <div class="stampbtn">Visited?</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="restaurant" data-tab="coffee">
+    <img src="./assets/restaurants/coffee.jpg" alt="">
+    <div class="restauranttext">
+      <h2>Coffee</h2>
+      <br>
+      <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+        super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
+      <div class="buttons">
+        <div class="removebtn">Delete?</div>
+        <div class="stampbtn">Visited?</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="restaurant" data-tab="mediterranean">
+    <img src="./assets/restaurants/mediterranean.jpg" alt="">
+    <div class="restauranttext">
+      <h2>Mediterranean</h2>
+      <br>
+      <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+        super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
+      <div class="buttons">
+        <div class="removebtn">Delete?</div>
+        <div class="stampbtn">Visited?</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="restaurant" data-tab="portuguese">
+    <img src="./assets/restaurants/portuguese.jpg" alt="">
+    <div class="restauranttext">
+      <h2>Portuguese</h2>
+      <br>
+      <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+        super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
+      <div class="buttons">
+        <div class="removebtn">Delete?</div>
+        <div class="stampbtn">Visited?</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="restaurant" data-tab="italian">
+    <img src="./assets/restaurants/italian.jpg" alt="">
+    <div class="restauranttext">
+      <h2>Italian</h2>
+      <br>
+      <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+        super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
+      <div class="buttons">
+        <div class="removebtn">Delete?</div>
+        <div class="stampbtn">Visited?</div>
+      </div>
+    </div>
+  </section>
+  <!-- mexican -->
+  <section class="restaurant" data-tab="mexican">
+    <img src="./assets/restaurants/mexican.jpg" alt="">
+    <div class="restauranttext">
+      <h2>Mexican</h2>
+      <br>
+      <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+        super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
+      <div class="buttons">
+        <div class="removebtn">Delete?</div>
+        <div class="stampbtn">Visited?</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="restaurant" data-tab="asian">
+    <img src="./assets/restaurants/asian.jpg" alt="">
+    <div class="restauranttext">
+      <h2>Asian</h2>
+      <br>
+      <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+        super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
+      <div class="buttons">
+        <div class="removebtn">Delete?</div>
+        <div class="stampbtn">Visited?</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="restaurant" data-tab="caribbean">
+    <img src="./assets/restaurants/caribbean.jpg" alt="">
+    <div class="restauranttext">
+      <h2>Caribbean</h2>
+      <br>
+      <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+        super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
+      <div class="buttons">
+        <div class="removebtn">Delete?</div>
+        <div class="stampbtn">Visited?</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="restaurant" data-tab="fastfood">
+    <img src="./assets/restaurants/fastfood.jpg" alt="">
+    <div class="restauranttext">
+      <h2>Fast Food</h2>
+      <br>
+      <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+        super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
+      <div class="buttons">
+        <div class="removebtn">Delete?</div>
+        <div class="stampbtn">Visited?</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="restaurant" data-tab="coffee">
+    <img src="./assets/restaurants/coffee.jpg" alt="">
+    <div class="restauranttext">
+      <h2>Coffee</h2>
+      <br>
+      <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+        super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
+      <div class="buttons">
+        <div class="removebtn">Delete?</div>
+        <div class="stampbtn">Visited?</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="restaurant" data-tab="mediterranean">
+    <img src="./assets/restaurants/mediterranean.jpg" alt="">
+    <div class="restauranttext">
+      <h2>Mediterranean</h2>
+      <br>
+      <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+        super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
+      <div class="buttons">
+        <div class="removebtn">Delete?</div>
+        <div class="stampbtn">Visited?</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="restaurant" data-tab="italian">
+    <img src="./assets/restaurants/italian.jpg" alt="">
+    <div class="restauranttext">
+      <h2>Italian</h2>
+      <br>
+      <p>Came in on a whim to have late lunch on afternoon and sat in the bar. The bartender was
+        super friendly and helpful. I was about 3 minutes too early for happy hour, and when he</p>
+      <div class="buttons">
+        <div class="removebtn">Delete?</div>
+        <div class="stampbtn">Visited?</div>
+      </div>
+    </div>
+  </section>
+  </div>
   </div>
 </body>
