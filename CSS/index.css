@@ -1,9 +1,7 @@
-.width-100 {
-  width: 100%;
-}
 
 * {
   box-sizing: border-box;
+  /* padding:10px 10px; */
 }
 
 html,
@@ -24,7 +22,7 @@ body {
 
 /* Background opacity */
 .fullcontainer {
-  width: 100%;
+  width: 90%;
   height: 100%;
   min-width: 100%;
   min-height: 100%;
@@ -52,7 +50,7 @@ body {
   flex-direction: row;
   color: white;
   letter-spacing: 1px;
-  position: fixed;
+  
   
 }
 
@@ -63,8 +61,6 @@ body {
   flex-direction: row;
   flex: 1;
   font-size: 11px;
-  position: fixed;
-
 }
 
 .top-bar .container .container-left span {
@@ -96,12 +92,18 @@ body {
   border-bottom: 2px solid #000000;
   width: 100%;
   height: 80px;
-  /* padding-bottom: 15px; */
-  position: relative;
-  overflow: hidden;
+  padding-bottom: 15px;
+  position: fixed;
+  /* overflow: hidden; */
+  z-index: 2;
   
 }
+.tabs {
+  position: fixed;
+  z-index: 2;
+  margin-top: 80px;
 
+}
 .header h1 {
   font-size: 60px;
   font-family: 'Baloo Bhai', cursive;
@@ -175,6 +177,7 @@ body {
   width: 100%;
   height: 65px;
   background-color: rgb(85, 190, 155);
+  
 }
 
 .tabs .food_type {
@@ -226,8 +229,8 @@ body {
   justify-content: space-evenly;
   align-items: none;
   flex-direction: row;
-  width: 100%;
-  margin-top: 16px;
+  width: 95%;
+  margin-top: 138px;
   flex-wrap: wrap;
 }
 
@@ -366,52 +369,3 @@ background-size: cover;
   }
 }
 
-.front,.back{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  transition: transform .6s linear;
-}
-.front img{
-  height: 80%;
-  width: 60%;
-}
-.front{
-  transform: perspective(600px) rotateY(0deg);
-}
-.back{
-  background: #f1f1f1;
-  transform: perspective(600px) rotateY(180deg);
-}
-.back-content{
-  color: #2c3e50;
-  text-align: center;
-  width: 100%;
-}
-
-/* .bac p{
-  display: inline-flex;
-  width: 40px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  color: #2c3e50;
-  font-size: 18px;
-  transition: 0.4s;
-  border-radius: 50%
-} */
-/* .bac p:hover{
-  background: #2c3e50;
-  color: white;
-} */
-.restaurant:hover > .front{
-  transform: perspective(600px) rotateY(-180deg);
-}
-.restaurant:hover > .bac{
-  transform: perspective(600px) rotateY(0deg);
-}
- /* social footer */
-
- 
