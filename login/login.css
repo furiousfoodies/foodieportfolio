@@ -10,7 +10,7 @@ body {
 
 .loginbox{
     width: 270px;
-    height: 380px;
+    height: 392px;
     background: #247053;
     top: 50%;
     color: #fff;
@@ -29,6 +29,7 @@ body {
     top: -50px;
     left: calc(50%-50px);
 }
+
 
 h1{
     margin: 0;
@@ -67,34 +68,44 @@ h1{
     border: none;
     border-bottom: 1px solid #fff;
     outline: none;  
-    height: 30px;
+    height: 20px;
     background: transparent;
   }
 .loginbox input[type="submit"]
 {
   border: none;
   outline: none;
-  height: 40px;
-  background-color: #75f5ca;
+  height: 30px;
+  background-color: #717775;
   color:black;
   font-size: 18px;
   border-radius: 6px;
-  margin-top: 4px;
+  margin-top: 20px;
 }
 
 .loginbox input[type="submit"]:hover{
   cursor: pointer;
-  background-color: gray;
   border-radius: 4px;
+  background-color: rgb(75, 196, 156);
+  color: white;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
 }
 .loginbox a{
   line-height: 20px;
+  font-family: 'Anton', sans-serif;
   text-decoration: none;
   font-size: 12px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  left: -29px;
+  top: -30px;
+}
+.loginbox a:hover{
   color: black;
-  position: absolute;
-
-
+  font-weight: bold;
 }
  .tetx{
   margin-top: -29px ;
