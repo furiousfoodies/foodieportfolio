@@ -1,15 +1,23 @@
-
+.twitter {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 14px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
 * {
   box-sizing: border-box;
   /* padding:10px 10px; */
 }
-
 html,
 body {
   margin: 0;
   padding: 0;
 }
-
 body {
   display: flex;
   justify-content: none;
@@ -18,8 +26,8 @@ body {
   background-color: #333333;
   color: #333;
   font-family: 'PT Sans', sans-serif;
+  padding: 0 10px;
 }
-
 /* Background opacity */
 .fullcontainer {
   width: 90%;
@@ -28,7 +36,6 @@ body {
   min-height: 100%;
   position: relative;
 }
-
 .fullcontainer::before {
   /* background-image: url("../assets/background.jpg"); */
   background-size: contain;
@@ -41,7 +48,6 @@ body {
   z-index: -2;
   opacity: 0.2;
 }
-
 .top-bar .container {
   width: 100%;
   display: flex;
@@ -50,10 +56,7 @@ body {
   flex-direction: row;
   color: white;
   letter-spacing: 1px;
-  
-  
 }
-
 .top-bar .container .container-left {
   display: flex;
   justify-content: none;
@@ -62,13 +65,11 @@ body {
   flex: 1;
   font-size: 11px;
 }
-
 .top-bar .container .container-left span {
   cursor: pointer;
   margin-right: 25%;
   font-weight: bold;
 }
-
 .top-bar .container .container-right {
   display: flex;
   justify-content: flex-end;
@@ -78,31 +79,25 @@ body {
   font-size: 11px;
   font-weight: bold;
 }
-
 .top-bar .container .container-right span {
   cursor: pointer;
 }
-
 /* Header */
 .header {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: row;
   background-color: #fff;
   border-bottom: 2px solid #000000;
   width: 100%;
   height: 80px;
-  padding-bottom: 15px;
   position: fixed;
   /* overflow: hidden; */
   z-index: 2;
-  
 }
 .tabs {
   position: fixed;
-  z-index: 2;
   margin-top: 80px;
-
 }
 .header h1 {
   font-size: 60px;
@@ -110,10 +105,9 @@ body {
   font-weight: bold;
   flex: 8;
   text-align: center;
-  color: rgb(3, 46, 16);
+  color: #032e10;
+  margin: 0;
 }
-
-
 /* Carousel */
 .carousel {
   width: 100%;
@@ -126,7 +120,6 @@ body {
   overflow: hidden;
   margin-top: 16px;
 }
-
 .carousel .left-button,
 .carousel .right-button {
   display: flex;
@@ -142,32 +135,27 @@ body {
   height: 50px;
   cursor: pointer;
 }
-
 .carousel .left-button:hover,
 .carousel .right-button:hover {
   color: #333;
   background-color: #fff;
   border: 2px solid #333;
 }
-
 .carousel .left-button {
   top: 50%;
   left: 25px;
   transform: translate(0, -50%);
 }
-
 .carousel .right-button {
   top: 50%;
   right: 25px;
   transform: translate(0, -50%);
 }
-
 .carousel img {
   width: 20%;
   display: flex;
   /* Change this back to 100% and none */
 }
-
 /* Tabs */
 .tabs {
   display: flex;
@@ -176,30 +164,26 @@ body {
   flex-direction: row;
   width: 100%;
   height: 65px;
-  background-color: rgb(85, 190, 155);
-  
+  background-color: #55be9b;
 }
-
 .tabs .food_type {
   display: flex;
   justify-content: none;
   align-items: center;
   flex-direction: row;
 }
-
 .tabs .food_type .title {
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: bold;
 }
-
 .tabs .food_type .tab {
   display: flex;
   justify-content: none;
   align-items: center;
   flex-direction: row;
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  background-color: #000000;
   margin: 0 5px;
   height: 25px;
   padding: 2px 10px;
@@ -208,22 +192,18 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
-
 .tabs .food_type .tab:hover {
   text-decoration: underline;
 }
-
 .tabs .food_type .active-tab {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  color: #000000;
   border: 2px solid #333;
 }
-
 /* Restaurants */
 .restaurants {
   margin-top: 95px;
 }
-
 .restaurants {
   display: flex;
   justify-content: space-evenly;
@@ -233,7 +213,6 @@ body {
   margin-top: 138px;
   flex-wrap: wrap;
 }
-
 /* Restaurant */
 .restaurant {
   margin: 20px 1%;
@@ -250,33 +229,29 @@ body {
   width: 45%;
   padding: 24px;
   background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%239caaa3'/%3E%3Cstop offset='1' stop-color='%23fffafa'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23fffefc' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fffefc' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23fffefc' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fffefc' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg %3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%239caaa3'/%3E%3Cstop offset='1' stop-color='%23fffafa'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23fffefc' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fffefc' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23fffefc' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23fffefc' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg %3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
-
 .restaurant h2 {
   font-size: 28px;
   padding: 0;
   margin: 15px 0 0;
   text-align: center;
 }
-
 .restaurant img {
   width: 55%;
   height: 100%;
   border-radius: 8px;
   z-index: 0;
 }
-
 /* Stamp image overlay */
 /* .inner {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    right: 0;
-  } */
-
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      right: 0;
+    } */
 .restaurant .restauranttext {
   width: 95%;
   text-align: justify;
@@ -284,8 +259,6 @@ background-size: cover;
   padding-left: 5%;
   overflow: hidden;
 }
-
-
 .restaurant .buttons {
   display: flex;
   flex-direction: row;
@@ -293,7 +266,6 @@ background-size: cover;
   padding-left: 5%;
   padding-right: 5%;
 }
-
 .restaurant .buttons .removebtn,
 .restaurant .buttons .stampbtn {
   width: 50%;
@@ -307,65 +279,117 @@ background-size: cover;
   padding: 4%;
   margin: 1%;
 }
-
 .restaurant .buttons .removebtn:hover,
 .restaurant .buttons .stampbtn:hover {
   background-color: #55BE9B;
   color: white;
-  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  text-shadow: 0px 0px 6px #ffffff;
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.4s ease 0s;
-
 }
-
 /* Media queries */
 @media (max-width: 500px) {
   .container {
     width: 50%;
   }
 }
-
 @media (max-width: 800px) {
   .container {
     width: 80%;
   }
 }
-
 @media (max-width: 1000px) {
   .container {
     width: 90%;
   }
 }
-
 @media (max-width: 1000px) {
   .restaurants {
     flex-direction: column;
     width: 100%;
   }
 }
-
 @media (max-width: 1000px) {
   .carousel {
     width: 90%;
   }
 }
-
 @media (max-width: 1000px) {
   .top-bar .container {
     width: 90%;
   }
 }
-
 @media (max-width: 1000px) {
   .tabs {
     width: 90%;
   }
 }
-
 @media (max-width: 1000px) {
   .header {
     width: 1000px;
   }
 }
-
+.twitter:hover {
+  color: #FF7D6D;
+  text-decoration: none;
+}
+span {
+  font-style: italic;
+  display: block;
+}
+img {
+  max-width: 100%;
+}
+/* Floating Social Media Bar */
+.fl-fl {
+  background: #55BE9B;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -160px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.fa {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+.fl-fl:hover {
+  right: 0;
+}
+.fl-fl a {
+  color: #000000 !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px !important;
+  vertical-align: top !important;
+}
+.float-fb {
+  top: 160px;
+}
+.float-tw {
+  top: 215px;
+}
+.float-gp {
+  top: 270px;
+}
+.float-rs {
+  top: 325px;
+}
+.float-ig {
+  top: 380px;
+}
+.float-pn {
+  top: 435px;
+}

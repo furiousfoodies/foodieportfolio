@@ -13,6 +13,10 @@
   <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
   <!-- <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script> -->
   <!-- <script src="./components/Users/Users.js" async></script> -->
+
+  <!-- Aos css & js -->
+  <link rel="stylesheet" href="css/aos.css">
+
 </head>
 
 <body>
@@ -31,9 +35,26 @@
       </div> -->
 
     <div class="header">
-      <h1>Restaurant Passport</h1>
-      <div class="container-left">
+      <div class="header-top">
+        <h1>Restaurant Passport</h1>
+      </div>
+      <!-- <div class="container-left">
         <span>LOG IN</span>
+      </div> -->
+      <div class="tabs">
+        <div class="food_type">
+          <span class="title">Restaurants</span>
+          <div data-tab="all" class="tab active-tab">All</div>
+          <div data-tab="american" class="tab">American</div>
+          <div data-tab="asian" class="tab">Asian</div>
+          <div data-tab="caribbean" class="tab">Caribbean</div>
+          <div data-tab="coffee" class="tab">Coffee</div>
+          <div data-tab="fastfood" class="tab">Fast Food</div>
+          <div data-tab="italian" class="tab">Italian</div>
+          <div data-tab="mediterranean" class="tab">Mediterranean</div>
+          <div data-tab="mexican" class="tab">Mexican</div>
+          <div data-tab="portuguese" class="tab">Portuguese</div>
+        </div>
       </div>
     </div>
     <!-- Cities  -->
@@ -50,7 +71,7 @@
         <div class="right-button">></div> 
       </div> -->
 
-    <div class="tabs">
+    <!-- <div class="tabs">
       <div class="food_type">
         <span class="title">Restaurants</span>
         <div data-tab="all" class="tab active-tab">All</div>
@@ -64,14 +85,18 @@
         <div data-tab="mexican" class="tab">Mexican</div>
         <div data-tab="portuguese" class="tab">Portuguese</div>
       </div>
-    </div>
+    </div> -->
 
     <div class="restaurants">
       <!-- american -->
       <section class="restaurant" data-tab="american">
-        <img id="img1" src="./assets/restaurants/thegoat.jpg" alt="The Goat">
-        <div class="textbuttons">
-          <div class="restauranttext">
+        <!-- <div class="hover-effect"> -->
+        <img class="image" src="./assets/restaurants/thegoat.jpg" alt="The Goat">
+        <!-- </div> -->
+
+
+        <div class="textbuttons" data-aos="fade-up">
+          <div class=" restauranttext">
             <h2>The Goat</h2>
             <br>
             <p>The Goat is a lively social space dedicated to bringing people together. With a community-inspired
@@ -87,7 +112,7 @@
         </div>
       </section>
       <!-- asian -->
-      <section class="restaurant" data-tab="asian">
+      <section class="restaurant" data-tab="asian" data-aos="fade-right">
         <img src="./assets/restaurants/asian.jpg" alt="">
         <div class="restauranttext">
           <h2>Asian</h2>
@@ -101,7 +126,7 @@
         </div>
       </section>
       <!-- caribbean -->
-      <section class="restaurant" data-tab="caribbean">
+      <section class="restaurant" data-tab="caribbean" data-aos="zoom-in">
         <img src="./assets/restaurants/caribbean.jpg" alt="">
         <div class="restauranttext">
           <h2>Caribbean</h2>
@@ -115,7 +140,7 @@
         </div>
       </section>
 
-      <section class="restaurant" data-tab="fastfood">
+      <section class="restaurant" data-tab="fastfood" data-aos="zoom-in">
         <img src="./assets/restaurants/fastfood.jpg" alt="">
         <div class="restauranttext">
           <h2>Fast Food</h2>
@@ -129,7 +154,7 @@
         </div>
       </section>
 
-      <section class="restaurant" data-tab="coffee">
+      <section class="restaurant" data-tab="coffee" data-aos="zoom-in">
         <img src="./assets/restaurants/coffee.jpg" alt="">
         <div class="restauranttext">
           <h2>Coffee</h2>
@@ -143,7 +168,7 @@
         </div>
       </section>
 
-      <section class="restaurant" data-tab="mediterranean">
+      <section class="restaurant" data-tab="mediterranean" data-aos="zoom-in">
         <img src="./assets/restaurants/mediterranean.jpg" alt="">
         <div class="restauranttext">
           <h2>Mediterranean</h2>
@@ -157,7 +182,7 @@
         </div>
       </section>
 
-      <section class="restaurant" data-tab="portuguese">
+      <section class="restaurant" data-tab="portuguese" data-aos="zoom-in">
         <img src="./assets/restaurants/portuguese.jpg" alt="">
         <div class="restauranttext">
           <h2>Portuguese</h2>
@@ -171,7 +196,7 @@
         </div>
       </section>
 
-      <section class="restaurant" data-tab="italian">
+      <section class="restaurant" data-tab="italian" data-aos="zoom-in">
         <img src="./assets/restaurants/italian.jpg" alt="">
         <div class="restauranttext">
           <h2>Italian</h2>
@@ -185,7 +210,7 @@
         </div>
       </section>
       <!-- mexican -->
-      <section class="restaurant" data-tab="mexican">
+      <section class="restaurant" data-tab="mexican" data-aos="zoom-in">
         <img src="./assets/restaurants/mexican.jpg" alt="">
         <div class="restauranttext">
           <h2>Mexican</h2>
@@ -199,7 +224,7 @@
         </div>
       </section>
 
-      <section class="restaurant" data-tab="asian">
+      <section class="restaurant" data-tab="asian" data-aos="zoom-in">
         <img src="./assets/restaurants/asian.jpg" alt="">
         <div class="restauranttext">
           <h2>Asian</h2>
@@ -213,7 +238,7 @@
         </div>
       </section>
 
-      <section class="restaurant" data-tab="caribbean">
+      <section class="restaurant" data-tab="caribbean" data-aos="zoom-in">
         <img src="./assets/restaurants/caribbean.jpg" alt="">
         <div class="restauranttext">
           <h2>Caribbean</h2>
@@ -227,7 +252,7 @@
         </div>
       </section>
 
-      <section class="restaurant" data-tab="fastfood">
+      <section class="restaurant" data-tab="fastfood" data-aos="zoom-in">
         <img src="./assets/restaurants/fastfood.jpg" alt="">
         <div class="restauranttext">
           <h2>Fast Food</h2>
@@ -240,8 +265,33 @@
           </div>
         </div>
       </section>
-
-      <section class="restaurant" data-tab="coffee">
+      <div class="float-sm">
+        <div class="fl-fl float-fb">
+          <i class="fa fa-facebook"></i>
+          <a href="" target="_blank"> Like us!</a>
+        </div>
+        <div class="fl-fl float-tw">
+          <i class="fa fa-twitter"></i>
+          <a href="" target="_blank">Follow us!</a>
+        </div>
+        <div class="fl-fl float-gp">
+          <i class="fa fa-google-plus"></i>
+          <a href="" target="_blank">Recommend us!</a>
+        </div>
+        <div class="fl-fl float-rs">
+          <i class="fa fa-rss"></i>
+          <a href="" target="_blank">Follow via RSS</a>
+        </div>
+        <div class="fl-fl float-ig">
+          <i class="fa fa-instagram"></i>
+          <a href="" target="_blank">Follow us!</a>
+        </div>
+        <div class="fl-fl float-pn">
+          <i class="fa fa-pinterest"></i>
+          <a href="" target="_blank">Follow us!</a>
+        </div>
+      </div>
+      <section class="restaurant" data-tab="coffee" data-aos="zoom-in">
         <img src="./assets/restaurants/coffee.jpg" alt="">
         <div class="restauranttext">
           <h2>Coffee</h2>
@@ -255,7 +305,7 @@
         </div>
       </section>
 
-      <section class="restaurant" data-tab="mediterranean">
+      <section class="restaurant" data-tab="mediterranean" data-aos="zoom-in">
         <img src="./assets/restaurants/mediterranean.jpg" alt="">
         <div class="restauranttext">
           <h2>Mediterranean</h2>
@@ -269,7 +319,7 @@
         </div>
       </section>
 
-      <section class="restaurant" data-tab="italian">
+      <section class="restaurant" data-tab="italian" data-aos="zoom-out-left">
         <img src="./assets/restaurants/italian.jpg" alt="">
         <div class="restauranttext">
           <h2>Italian</h2>
@@ -286,4 +336,9 @@
 
   </div>
 
-</body>
+
+  <!-- Aos javascript link -->
+  <script src="components/animation/aos.js"></script>
+
+  <script type=text/javascript> AOS.init({ duration: 1600, }); // window.addEventListener('load', AOS.refresh);
+    </script> </body>
