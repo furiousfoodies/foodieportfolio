@@ -1,10 +1,3 @@
-// class Cities{
-//     constructor(city){
-//         this.city = city;
-//         this.state = city.state;
-//     }
-// } 
-
 class Carousel {
     constructor(carouselElement) {
         this.carouselElement = carouselElement;
