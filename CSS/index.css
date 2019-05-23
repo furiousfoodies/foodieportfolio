@@ -343,7 +343,7 @@ img {
 }
 /* Floating Social Media Bar */
 .fl-fl {
-  background: #55BE9B;
+  background: #a6fcdf;
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 4px;
@@ -362,8 +362,6 @@ img {
   font-size: 20px;
   color: #fff;
   padding: 10px 0;
-  width: 40px;
-  margin-left: 8px;
 }
 .fl-fl:hover {
   right: 0;
