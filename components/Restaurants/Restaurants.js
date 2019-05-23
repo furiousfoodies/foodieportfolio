@@ -41,7 +41,14 @@ let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));
 //     trigger: 'hover'
 //   });
 
+<<<<<<< HEAD
+//   var flipimg = document.querySelectorAll(".textbuttons")
+// flipimg.addEventListener("click",() =>{
+//     flipimg.toggletextbuttons("flip");
+// })
+=======
 // var flipimg = document.querySelectorAll(".textbuttons")
 // flipimg.addEventListener("click",() =>{
 //     flipimg.toggletextbuttons("flip");
 // });
+>>>>>>> 977c57f6addafad60595d52188b2252b5125b030
