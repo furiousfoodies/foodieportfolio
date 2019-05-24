@@ -22,7 +22,6 @@ class Carousel {
 
     // Method for scrolling images
     scroll(direction) {
-        // Keeps the index from going higher than the max length or lower than 0
         if (direction === "left") {
             this.currentIndex--;
         } else this.currentIndex++;

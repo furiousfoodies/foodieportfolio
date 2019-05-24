@@ -3,11 +3,10 @@ class TabLink {
         this.tabElement = tabElement;
         this.tabData = this.tabElement.dataset.tab;
         if (this.tabData == "all") {
-            this.cards = document.querySelectorAll(".card");
+            this.cards = document.querySelectorAll(".restaurant");
         } else {
-            this.cards = document.querySelectorAll(`.card[data-tab='${this.tabData}']`);
+            this.cards = document.querySelectorAll(`.restaurant[data-tab='${this.tabData}']`);
         }
-
         this.cards = Array.from(this.cards).map(card => new TabCard(card));
         this.tabElement.addEventListener("click", () => this.selectTab());
     }
@@ -17,7 +16,7 @@ class TabLink {
         tabs.forEach(item => {
             item.classList.remove("active-tab");
         })
-        const cards = document.querySelectorAll(".card");
+        const cards = document.querySelectorAll(".restaurant");
         cards.forEach(item => {
             item.style.display = "none";
         })

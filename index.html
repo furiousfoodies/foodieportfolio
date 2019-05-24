@@ -10,6 +10,8 @@
   <script src="./components/Cities/Cities.js" async></script>
   <!-- <script src="jquery.flip.js"></script> -->
   <script src="./components/Restaurants/Restaurants.js" async></script>
+  <script src="./components/Foodtypes/Foodtypes.js" async></script>
+
   <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
   <!-- <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script> -->
   <!-- <script src="./components/Users/Users.js" async></script> -->
@@ -29,16 +31,17 @@
             </div>
           </div>
       </div> -->
-
+      
+<!-- Main header -->
     <div class="header">
       <h1>Restaurant Passport</h1>
       <div class="container-left">
         <span>LOG IN</span>
       </div>
     </div>
+
     <!-- Cities  -->
     <div class="carousel">
-
         <div class="left-button"><</div>
         <img src="./assets/carousel/asian.jpg"/>
         <img src="./assets/carousel/caribbean.jpg"/>
@@ -51,6 +54,7 @@
         <div class="right-button">></div> 
     </div>
 
+<!-- Restaurant types -->
       <div class="tabs">
         <div class="food_type">
           <span class="title">Restaurants</span>
@@ -67,9 +71,9 @@
         </div>
       </div>
 
+      <!-- Restaurants -->
       <div class="restaurants">
-        <!-- american -->
-        <section class="restaurant" data-tab="american">
+        <section class="restaurant" data-tab="american" data-button="american">
           <img id="img1" src="./assets/restaurants/thegoat.jpg" alt="The Goat">
           <div class="textbuttons">
             <div class="restauranttext">
@@ -87,7 +91,7 @@
             </div>
           </div>
         </section>
-        <!-- asian -->
+
         <section class="restaurant" data-tab="asian">
           <img src="./assets/restaurants/asian.jpg" alt="">
           <div class="restauranttext">
@@ -101,6 +105,7 @@
             </div>
           </div>
         </section>
+
         <!-- caribbean -->
         <section class="restaurant" data-tab="caribbean">
           <img src="./assets/restaurants/caribbean.jpg" alt="">

@@ -156,7 +156,6 @@ body {
   width: 100%;
   display: none;
   flex: 0;
-  /* Change this back to 100% and none */
 }
 
 /* Tabs */
@@ -212,10 +211,6 @@ body {
 }
 
 /* Restaurants */
-.restaurants {
-  margin-top: 95px;
-}
-
 .restaurants {
   display: flex;
   justify-content: space-evenly;
@@ -276,7 +271,6 @@ body {
   padding-left: 5%;
   overflow: hidden;
 }
-
 
 .restaurant .buttons {
   display: flex;
