@@ -414,4 +414,11 @@ body {
   position: absolute;
   left: 20px;
   text-decoration: none;
+  color: #000000;
+}
+.right-cont a{
+  position: absolute;
+  right: 20px;
+  text-decoration: none;
+  color: #000000;
 }
