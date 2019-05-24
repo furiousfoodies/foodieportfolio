@@ -5,18 +5,18 @@
   <title>Restaurant Passport</title>
   <link rel="icon" href="./assets/passport.png">
   <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
-  <!-- <script src="./components/Navigation/Navigation.js" async></script>
-  <script src="./components/Passports/Passports.js" async></script>
-  <script src="./components/Cities/Cities.js" async></script> -->
-  <script src="jquery.flip.js"></script>
+  <!-- <script src="./components/Navigation/Navigation.js" async></script> -->
+  <!-- <script src="./components/Passports/Passports.js" async></script> -->
+  <script src="./components/Cities/Cities.js" async></script>
+  <!-- <script src="jquery.flip.js"></script> -->
   <script src="./components/Restaurants/Restaurants.js" async></script>
-  <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
-  <!-- <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
   <!-- <script src="./components/Users/Users.js" async></script> -->
 
   <!-- Aos css  & js -->
-  <link rel="stylesheet" href="css/aos.css">
 
+  <link rel="stylesheet" href="css/aos.css">
   <!-- Font awsome  -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -41,24 +41,12 @@
         </div>
       <div class="header-top">
         <h1>Restaurant Passport</h1>
+<!--       <h1>Restaurant Passport</h1>
+      <div class="container-left">
+       <a href="./login/login.html">LOGIN</a>  -->
       </div>
-      <!-- <div class="container-left">
-        <span>LOG IN</span>
-      </div> -->
-      <div class="tabs">
-        <div class="food_type">
-          <span class="title">Restaurants</span>
-          <div data-tab="all" class="tab active-tab">All</div>
-          <div data-tab="american" class="tab">American</div>
-          <div data-tab="asian" class="tab">Asian</div>
-          <div data-tab="caribbean" class="tab">Caribbean</div>
-          <div data-tab="coffee" class="tab">Coffee</div>
-          <div data-tab="fastfood" class="tab">Fast Food</div>
-          <div data-tab="italian" class="tab">Italian</div>
-          <div data-tab="mediterranean" class="tab">Mediterranean</div>
-          <div data-tab="mexican" class="tab">Mexican</div>
-          <div data-tab="portuguese" class="tab">Portuguese</div>
-        </div>
+      <div class="right-cont">
+       <a href="#">MEET THE CREW </a> 
       </div>
     </div>
     <!-- Cities  -->
@@ -75,32 +63,28 @@
         <div class="right-button">></div>
       </div>
 
-      <!-- <div class="tabs">
-      <div class="food_type">
-        <span class="title">Restaurants</span>
-        <div data-tab="all" class="tab active-tab">All</div>
-        <div data-tab="american" class="tab">American</div>
-        <div data-tab="asian" class="tab">Asian</div>
-        <div data-tab="caribbean" class="tab">Caribbean</div>
-        <div data-tab="coffee" class="tab">Coffee</div>
-        <div data-tab="fastfood" class="tab">Fast Food</div>
-        <div data-tab="italian" class="tab">Italian</div>
-        <div data-tab="mediterranean" class="tab">Mediterranean</div>
-        <div data-tab="mexican" class="tab">Mexican</div>
-        <div data-tab="portuguese" class="tab">Portuguese</div>
+      <div class="tabs">
+        <div class="food_type">
+          <span class="title">Restaurants</span>
+          <div data-tab="all" class="tab active-tab">All</div>
+          <div data-tab="american" class="tab">American</div>
+          <div data-tab="asian" class="tab">Asian</div>
+          <div data-tab="caribbean" class="tab">Caribbean</div>
+          <div data-tab="coffee" class="tab">Coffee</div>
+          <div data-tab="fastfood" class="tab">Fast Food</div>
+          <div data-tab="italian" class="tab">Italian</div>
+          <div data-tab="mediterranean" class="tab">Mediterranean</div>
+          <div data-tab="mexican" class="tab">Mexican</div>
+          <div data-tab="portuguese" class="tab">Portuguese</div>
+        </div>
       </div>
-    </div> -->
 
       <div class="restaurants">
         <!-- american -->
         <section class="restaurant" data-tab="american">
-          <!-- <div class="hover-effect"> -->
-          <img class="image" src="./assets/restaurants/thegoat.jpg" alt="The Goat">
-          <!-- </div> -->
-
-
+          <img id="img1" src="./assets/restaurants/thegoat.jpg" alt="The Goat">
           <div class="textbuttons" data-aos="fade-up">
-            <div class=" restauranttext">
+            <div class="restauranttext">
               <h2>The Goat</h2>
               <br>
               <p>The Goat is a lively social space dedicated to bringing people together. With a community-inspired
@@ -297,6 +281,7 @@
                 vertical-align: top"></i> Linkden!</a>
             </div>
         </div>
+
         <section class="restaurant" data-tab="coffee" data-aos="zoom-in">
           <img src="./assets/restaurants/coffee.jpg" alt="">
           <div class="restauranttext">
@@ -325,7 +310,7 @@
           </div>
         </section>
 
-        <section class="restaurant" data-tab="italian" data-aos="zoom-out-left">
+        <section class="restaurant" data-tab="italian" data-aos="zoom-in">
           <img src="./assets/restaurants/italian.jpg" alt="">
           <div class="restauranttext">
             <h2>Italian</h2>
@@ -339,10 +324,29 @@
           </div>
         </section>
       </div>
+      <div class="float-sm">
 
+        <div class="fl-fl float-rs">
+          <!-- <i class="fa fa-rss"></i> -->
+          <a href="https://github.com/sweyome" target="_blank"><i class="fab fa-github fa-2x" style="color: #000; text-align: center;
+              line-height: 43px !important;
+              vertical-align: top"></i> github</a>
+        </div>
+        <div class="fl-fl float-ig">
+          <!-- <i class="fa fa-instagram"></i> -->
+          <a href="" target="_blank"><i class="fas fa-thumbs-up fa-2x" style="color: #4267B2; text-align: center;
+              line-height: 43px
+              vertical-align: top"></i> Like
+            us!</a>
+        </div>
+        <div class="fl-fl float-pn">
+          <!-- <i class="fa fa-pinterest"></i> -->
+          <a href="https://twitter.com/curtdragon" target="_blank"><i class="fab fa-twitter fa-2x" style="color: #1AB2E8; text-align: center;
+              line-height: 43px
+              vertical-align: top"></i> Follow us!</a>
+        </div>
+      </div>
     </div>
-
-
     <!-- Aos javascript link -->
     <script src="components/animation/aos.js"></script>
 

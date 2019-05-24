@@ -36,3 +36,17 @@ class TabCard {
 }
 
 let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));
+// sticky
+
+window.onscroll = function() {myFunction()};
+
+var tabs = document.querySelectorAll("tabs");
+var sticky = tabs.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    tabs.classList.add("sticky");
+  } else {
+    tabs.classList.remove("sticky");
+  }
+}
